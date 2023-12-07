@@ -32,7 +32,7 @@ x<-DI%>%
 hist(ohx$ordernum, main= "frequency of number of orders",xlab= "number of orders" ,col="blue")
 # more orders are found more frequently in an area together because the habitat in which they are found promotes biodiversity and allows for many different organisms to coexists, 
 # for the next project how does this relate to the small mammal data and vegetation, which factors contribute to the increase in orders?
-ggplot(data=x, mapping = aes(x=Site, fill="red"))+geom_bar()
+ggplot(data=x, mapping = aes(x=Site, fill="red"))+geom_bar()+ ggtitle("Number of insects collected per Site")+ ylab("Number of Individuals (insects)")
 # A1 has the most individuals found, may be due to sampling error because some of the samples have not been identified yet and more work has to be done to finish the data set. But the A1 site may have higher biodiversity than the other sites. 
  ohx<- x%>% 
   group_by(Site)%>%
